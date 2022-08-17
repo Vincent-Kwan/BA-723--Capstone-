@@ -1,0 +1,41 @@
+1. Correcting data - textual data has typos, how to fix it?
+2. I'm not accounting for different languages. Mixed languages - english + others being used.
+
+Related Research:
+1. https://link.springer.com/article/10.1007/s00146-022-01469-0#Sec4
+2. https://www.scirp.org/journal/paperinformation.aspx?paperid=93637 <- bullshit according to prof will
+
+Example Text processing
+1. https://gist.github.com/lisanka93/6c44850620a7e93b0ced950bb1b777b6#file-dummy-movie-dataset-ipynb
+
+
+Notes:
+1. Don't do modal imputation. Probabilistic imputation, https://scikit-learn.org/stable/modules/impute.html
+2. 'style in sentences' - using asterisks and so on, Words per sentence, number of punctuation marks, run-on sentences for feature generation
+3. Localized imputation, missing indicator along with 'Unknown' value 
+4. Lemmatization might get rid of the cultural differences in text, in which case stemming might be better
+5. Use shapley values to show feature importance
+6. Feature importance with permutation - https://christophm.github.io/interpretable-ml-book/feature-importance.html
+
+For Presentation:
+1. https://www.edmontonpolice.ca/CrimePrevention/PersonalFamilySafety/Frauds/OnlineScams/EmploymentScams
+
+
+Ideas:
+1. https://sites.duke.edu/lit80s_02_f2013_augrealities/text-visualization-see-more-than-texts/
+2. https://towardsdatascience.com/a-complete-exploratory-data-analysis-and-visualization-for-text-data-29fb1b96fb6a
+3. https://github.com/JasonKessler/scattertext
+4. https://courses.cs.washington.edu/courses/cse512/15sp/lectures/CSE512-Text.pdf
+
+5. Sentiment analysis - job postings should have a warm/positive tone.
+Test hypothesis whether there is difference in tone between fraud and non-fraud. Fraud should be higher as per intuition.
+
+6. Use LSTM NNs
+
+7. https://www.kaggle.com/code/vicely07/sentiment-analysis-of-city-of-la-job-postings/notebook
+
+8. https://www.kaggle.com/code/chadalee/text-analytics-explained-job-description-data/notebook
+
+9. https://machinelearningmastery.com/how-to-develop-and-evaluate-naive-classifier-strategies-using-probability/
+
+10. https://www.kaggle.com/code/vikassingh1996/fake-job-post-prediction-countvec-glove-bert

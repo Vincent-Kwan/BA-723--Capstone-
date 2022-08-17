@@ -1,0 +1,9 @@
+Fraud prediction is a daunting task due to the rare nature of the event. 
+
+Through my modelling, I aimed to answer the following key questions:
+1. Are post characteristics sufficient to distinguish between fraud/non-fraud?
+2. Does 'sentiment' play a role in determining fraudulent behavior?
+3. How do fraudulent actors mask their behavior? And is there any 'gimmes'?
+
+Model performance was measured against naive guessing - guessing majority class as per proportion in dataset.
+Naive guessing yield an F1-score of just 5.4% whereas the simplest model yield an F1-score of 75%!
