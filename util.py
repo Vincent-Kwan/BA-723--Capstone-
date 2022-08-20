@@ -32,7 +32,7 @@ def iqr_hist(df, col_name):
     print('The IQR is', iqr)
     print('The arithmetic mean is', df[col_name].mean())
 
-    df[col_name][df[col_name].between(lower - (1.5 * iqr), upper + (1.5 * iqr))].hist()
+    df[col_name][df[col_name].between(lower - (1.5 * iqr), upper + (1.5 * iqr))].hist(color = 'black')
 
 
 # helper function to compute and print accuracy, and classification scores 
