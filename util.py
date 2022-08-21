@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn.metrics import confusion_matrix, precision_recall_curve, auc,roc_curve, recall_score, classification_report, f1_score, precision_recall_fscore_support, r2_score
+from sklearn.metrics import confusion_matrix, precision_recall_curve, auc,roc_curve, recall_score, classification_report, f1_score, precision_recall_fscore_support, r2_score, ConfusionMatrixDisplay
 
 # This file contains all helper functions to help in the data-preprocessing and result generation
 
@@ -75,6 +75,10 @@ def classification_performance(valid_Y, predict_Y):
 
     fscore = 2 * ((precision * tpr)/(precision + tpr))
     print("F1-Score: %.4f%%" %(fscore * 100))
+
+    ConfusionMatrixDisplay.from_predictions(valid_Y, predict_Y)
+
+
 
 
 def make_result_df(data, predictors, estimator):
